@@ -58,3 +58,28 @@ graph TD
     T --> V[Dynamic Registry Expansion: Add SKU / Supplier] --> F
     T --> W[Close Today & Advance to Tomorrow] --> X[Calculate & Deduct Baseline Daily Sales]
     X --> Y[Generate Persistent EOD Snapshot Ledger] --> F
+
+## 🧮 Core Algorithm Matrix
+
+* **Ingestion & Security Verification:** Validates the sender's email against the authorized supplier registry before allowing any data extraction to protect the engine from unverified external inputs.
+* **Entity & Delay Extraction:** Scans the incoming message text using regular expressions to isolate product names and calculate delay timelines from hours or days into standard day units.
+* **Runway Deficit Assessment:** Divides current warehouse stock by the historical daily sales average to determine the inventory runway, flagging an exception if the parsed delay exceeds the available buffer.
+* **Dynamic State Mutation:** Shifts the core system state automatically from idle to a dedicated approval queue the exact moment a supply gap or operational anomaly is detected.
+* **End-of-Day Ledger Accounting:** Deducts baseline consumer demand from live stock counts at the close of each day, caps balances at zero to prevent negative values, and commits the metrics to history.
+
+---
+
+## 📝 Conclusion
+
+* **Functional Prototype Success:** Proves that a state-driven dashboard can handle complex supply chain challenges like automated message parsing and rule-based inventory routing.
+* **Operational Efficiency Gains:** Removes human calculation errors by processing stock runways automatically and instantly alerting teams to upcoming shortages.
+* **Proactive Security Foundation:** Combines strict sender filtering with automated anomaly checks to keep corporate supply data secure and reliable.
+
+---
+
+## 🛠️ Next Steps: Building a Real Working Production Prototype
+
+* **Production AI Model Integration:** Replaces basic keyword matching with a dedicated large language model API (like OpenAI or Anthropic) to interpret messy, unstructured emails cleanly.
+* **Persistent Database Storage:** Migrates data out of temporary app memory into a live database like PostgreSQL or Supabase to protect records and handle multiple users safely.
+* **Automated Inbox Webhooks:** Integrates the application directly with actual business email accounts using tools like SendGrid to ingest supply alerts automatically without copy-pasting.
+* **Role-Based Access Control:** Implements secure logins and user permissions so warehouse teams can update stock while restricting order approvals to managers.
