@@ -45,6 +45,20 @@ An intelligent, state-driven inventory management and logistics parsing engine b
 * **Automated Inbox Webhooks:** Integrates the application directly with actual business email accounts using tools like SendGrid to ingest supply alerts automatically without copy-pasting.
 * **Role-Based Access Control:** Implements secure logins and user permissions so warehouse teams can update stock while restricting order approvals to managers.
 
+## ⚙️ Installation Prerequisites
+
+* **Python Environment Setup:** Ensure Python is installed on your computer before running the script.
+* **Required Package Dependencies:** Install the framework core libraries by opening your terminal and typing `pip install streamlit pandas`.
+
+---
+
+## 🏃 How to Run the Application
+
+* **Save the Script:** Create a new file named `app.py` inside your project directory and paste the complete application code into it.
+* **Navigate to Folder:** Use your command prompt or terminal to navigate into the specific folder where your `app.py` file lives.
+* **Boot the Core Engine:** Type and enter `streamlit run app.py` into your terminal window to spin up the server environment.
+* **Launch the Interface:** Open your web browser and go to `http://localhost:8501` if the dashboard panel does not automatically open up on its own.
+
 ## 📊 System Flowchart
 
 This flowchart outlines the operational architecture of the AutoRoute engine. GitHub renders this diagram automatically using its native Mermaid support.
