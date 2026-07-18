@@ -1,3 +1,5 @@
+
+
 # AutoRoute Dynamic Logi-Agent Panel 📦
 
 An intelligent, state-driven inventory management and logistics parsing engine built with Python and Streamlit. This application simulates an automated enterprise supply chain system that processes inbound communications, mitigates stock shortages, enforces data security, and handles day-to-day warehouse accounting.
@@ -59,6 +61,9 @@ An intelligent, state-driven inventory management and logistics parsing engine b
 * **Boot the Core Engine:** Type and enter `streamlit run app.py` into your terminal window to spin up the server environment.
 * **Launch the Interface:** Open your web browser and go to `http://localhost:8501` if the dashboard panel does not automatically open up on its own.
 
+## 🎥 Project Demo Video
+
+* **Watch the Live Walkthrough:** [Click here to watch the full AutoRoute system demo](https://drive.google.com/open?id=1wQ7pjNSvbNkAQgiQLGltoSPYvzsMIaSy&usp=drive_copy)
 ## 📊 System Flowchart
 
 This flowchart outlines the operational architecture of the AutoRoute engine. GitHub renders this diagram automatically using its native Mermaid support.
