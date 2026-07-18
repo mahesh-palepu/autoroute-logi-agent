@@ -20,3 +20,5 @@ Built using **Python** and **Streamlit**.
 1. Install requirements:
    ```bash
    pip install streamlit pandas
+1. Run the application:
+streamlit run app.py
